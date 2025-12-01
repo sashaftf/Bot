@@ -26,6 +26,7 @@ body {
 
 /* Анимация появления */
 .fade-in {
+    will-change: transform;
     opacity: 0;
     transform: translateY(40px);
     transition: 0.7s ease;
@@ -228,7 +229,7 @@ footer {
     <h2 style="text-align:center;">Оставить заявку</h2>
     <form id="contactForm" class="form">
         <input id="name" type="text" placeholder="Ваше имя" required>
-        <input id="phone" type="tel" placeholder="+7 (999) 123-45-67" required>
+        <input id="phone" type="tel" placeholder="+7 (999) 123-45-67" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
         <select id="service" required>
             <option value="">Выберите услугу</option>
             <option value="Генеральная уборка">Генеральная уборка</option>
