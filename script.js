@@ -31,8 +31,8 @@ phoneInput.addEventListener("input", function(e) {
 });
 
 // Отправка в Telegram
-const BOT_TOKEN = "ТВОЙ_НОВЫЙ_ТОКЕН";        // ← ОБЯЗАТЕЛЬНО ЗАМЕНИ!
-const CHAT_ID = "ТВОЙ_CHAT_ID";              // ← ОБЯЗАТЕЛЬНО ЗАМЕНИ!
+const BOT_TOKEN = "8592771262:AAEXEF4Kpi57QjKLkpWbzTsAAAnVr6zSn5U";        // ← ОБЯЗАТЕЛЬНО ЗАМЕНИ!
+const CHAT_ID = "7305684079";              // ← ОБЯЗАТЕЛЬНО ЗАМЕНИ!
 const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
