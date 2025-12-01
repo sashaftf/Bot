@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanHome – Уборка квартир</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">CleanHome</div>
+    <nav>
+        <a onclick="scrollToBlock('services')">Услуги</a>
+        <a onclick="scrollToBlock('form')">Заказать</a>
+        <a onclick="scrollToBlock('footer')">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero fade-in">
+    <div class="hero-text">
+        <h1>Профессиональный клининг квартир</h1>
+        <p>Чистота, свежесть и порядок — без усилий. Мы приедем быстро, сделаем идеально, а вы наслаждаетесь чистым домом.</p>
+        <span class="btn" onclick="scrollToBlock('form')">Заказать уборку</span>
+    </div>
+</section>
+
+<section id="services" class="services fade-in">
+    <h2>Наши услуги</h2>
+    <div class="cards">
+        <div class="card fade-in">
+            <h3>Генеральная уборка</h3>
+            <p>Глубокая очистка квартиры со всеми деталями.</p>
+            <span class="btn" onclick="scrollToBlock('form')">Заказать</span>
+        </div>
+        <div class="card fade-in">
+            <h3>Поддерживающая уборка</h3>
+            <p>Регулярная чистота каждую неделю.</p>
+            <span class="btn" onclick="scrollToBlock('form')">Заказать</span>
+        </div>
+        <div class="card fade-in">
+            <h3>Уборка после ремонта</h3>
+            <p>Удалим пыль, строительный мусор и следы ремонта.</p>
+            <span class="btn" onclick="scrollToBlock('form')">Заказать</span>
+        </div>
+    </div>
+</section>
+
+<section id="form" class="fade-in">
+    <h2 style="text-align:center;">Оставить заявку</h2>
+    <form id="contactForm" class="form">
+        <input id="name" type="text" placeholder="Ваше имя" required>
+        <input id="phone" type="tel" placeholder="+7 (999) 123-45-67" required>
+        <select id="service" required>
+            <option value="">Выберите услугу</option>
+            <option value="Генеральная уборка">Генеральная уборка</option>
+            <option value="Поддерживающая уборка">Поддерживающая уборка</option>
+            <option value="Уборка после ремонта">Уборка после ремонта</option>
+        </select>
+        <button type="submit">Отправить заявку</button>
+        <div id="status"></div>
+    </form>
+</section>
+
+<footer id="footer" class="fade-in">
+    © 2025 CleanHome. Все права защищены.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
