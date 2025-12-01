@@ -1,72 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CleanHome – Уборка квартир</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <!-- Вставь сюда блок из пункта 1 -->
 </head>
 <body>
 
-<header>
-    <div class="logo">CleanHome</div>
-    <nav>
-        <a onclick="scrollToBlock('services')">Услуги</a>
-        <a onclick="scrollToBlock('form')">Заказать</a>
-        <a onclick="scrollToBlock('footer')">Контакты</a>
-    </nav>
-</header>
+  <!-- ХЕРОЙ-СЕКЦИЯ (главный экран) -->
+  <header class="hero">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">ВАШЛОГО</div>
+        <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+        <ul class="nav-list">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
 
-<section class="hero fade-in">
-    <div class="hero-text">
-        <h1>Профессиональный клининг квартир</h1>
-        <p>Чистота, свежесть и порядок — без усилий. Мы приедем быстро, сделаем идеально, а вы наслаждаетесь чистым домом.</p>
-        <span class="btn" onclick="scrollToBlock('form')">Заказать уборку</span>
+      <div class="hero-content">
+        <h1 class="hero-title">Делаем бизнес<br>эффективнее с 2015 года</h1>
+        <p class="hero-subtitle">Консалтинг / Автоматизация / Маркетинг<br>Более 300 довольных клиентов по всей России и СНГ</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Обсудить проект</a>
+          <a href="#cases" class="btn-secondary">Посмотреть кейсы →</a>
+        </div>
+      </div>
     </div>
-</section>
+  </header>
 
-<section id="services" class="services fade-in">
-    <h2>Наши услуги</h2>
-    <div class="cards">
-        <div class="card fade-in">
-            <h3>Генеральная уборка</h3>
-            <p>Глубокая очистка квартиры со всеми деталями.</p>
-            <a href="#form" class="btn" onclick="scrollToBlock('form')">Заказать</a>
+  <!-- УСЛУГИ -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Чем мы помогаем бизнесу</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3>Стратегический консалтинг</h3>
+          <p>Разрабатываем стратегию роста и увеличиваем прибыль на 30–150 % за 12 месяцев</p>
         </div>
-        <div class="card fade-in">
-            <h3>Поддерживающая уборка</h3>
-            <p>Регулярная чистота каждую неделю.</p>
-            <a href="#form" class="btn" onclick="scrollToBlock('form')">Заказать</a>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>Автоматизация процессов</h3>
+          <p>Внедряем CRM, ERP и чат-боты под ключ. Экономия до 40 % фонда оплаты труда</p>
         </div>
-        <div class="card fade-in">
-            <h3>Уборка после ремонта</h3>
-            <p>Удалим пыль, строительный мусор и следы ремонта.</p>
-            <a href="#form" class="btn" onclick="scrollToBlock('form')">Заказать</a>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Performance-маркетинг</h3>
+          <p>Реклама, которая приносит измеримый результат: от 3 до 15 лидов в день</p>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="form" class="fade-in">
-    <h2 style="text-align:center;">Оставить заявку</h2>
-    <form id="contactForm" class="form">
-        <input id="name" type="text" placeholder="Ваше имя" required>
-        <input id="phone" type="tel" placeholder="+7 (999) 123-45-67" required>
-        <select id="service" required>
-            <option value="">Выберите услугу</option>
-            <option value="Генеральная уборка">Генеральная уборка</option>
-            <option value="Поддерживающая уборка">Поддерживающая уборка</option>
-            <option value="Уборка после ремонта">Уборка после ремонта</option>
-        </select>
-        <button type="submit">Отправить заявку</button>
-        <div id="status"></div>
-    </form>
-</section>
+  <!-- О НАС + СЧЁТЧИКИ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>Работаем на результат,<br>а не на отчёты</h2>
+          <p>Мы не просто консультанты — мы становимся частью вашей команды и отвечаем за KPI.</p>
+          <ul class="stats">
+            <li><strong>300+</strong> реализованных проектов</li>
+            <li><strong>94 %</strong> клиентов продолжают сотрудничество</li>
+            <li><strong>127 млн ₽</strong> дополнительной прибыли клиентам в 2024</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Команда">
+      </div>
+    </div>
+  </section>
 
-<footer id="footer" class="fade-in">
-    © 2025 CleanHome. Все права защищены.
-</footer>
+  <!-- КЕЙСЫ -->
+  <section id="cases" class="cases">
+    <div class="container">
+      <h2 class="section-title">Реальные результаты</h2>
+      <div class="cases-grid">
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="">
+          <div class="case-info">
+            <h3>Производство мебели «Лофт»</h3>
+            <p>×4,7 рост выручки за 14 месяцев<br>+218 % маржинальность</p>
+            <a href="#" class="case-link">Подробнее →</a>
+          </div>
+        </div>
+        <!-- Добавь ещё 2–3 кейса -->
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
-</body>
-</html>
+  <!-- ФОРМА ЗАЯВКИ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Готовы увеличить прибыль?</h2>
+      <p class="contact-text">Оставьте заявку — перезвоним в течение 15 минут</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <button type="submit" class="btn-primary">Отправить заявку</button>
+      </form>
+      <p class="contact-small">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Ваша компания. Все права защищены.</p>
+    </div>
+  </footer>
