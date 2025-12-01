@@ -1,143 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Ваша компания — решение для бизнеса</title>
-
-  <!-- Лучшие шрифты 2025 для делового вида -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --color-primary: #0f172a;     /* почти чёрный */
-      --color-accent: #2563eb;      /* яркий синий */
-      --color-accent-hover: #1d4ed8;
-      --color-gray: #64748b;
-      --color-light: #f8fafc;
-      --color-border: #e2e8f0;
-    }
-
-    body {
-      font-family: 'Manrope', sans-serif;
-      color: var(--color-primary);
-      background: white;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, h4 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanHome — Профессиональная уборка в Москве</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- ХЕРОЙ-СЕКЦИЯ (главный экран) -->
-  <header class="hero">
-    <div class="container">
-      <nav class="nav">
-        <div class="logo">ВАШЛОГО</div>
-        <button class="menu-toggle" aria-label="Открыть меню">☰</button>
-        <ul class="nav-list">
-          <li><a href="#services">Услуги</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#cases">Кейсы</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
+<header>
+    <div class="logo">CleanHome</div>
+    <nav>
+        <a href="#services">Услуги</a>
+        <a href="#form">Заказать</a>
+        <a href="#form">Контакты</a>
+    </nav>
+</header>
 
-      <div class="hero-content">
-        <h1 class="hero-title">Делаем бизнес<br>эффективнее с 2015 года</h1>
-        <p class="hero-subtitle">Консалтинг / Автоматизация / Маркетинг<br>Более 300 довольных клиентов по всей России и СНГ</p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn-primary">Обсудить проект</a>
-          <a href="#cases" class="btn-secondary">Посмотреть кейсы →</a>
-        </div>
-      </div>
+<!-- WhatsApp кнопка -->
+<a href="https://wa.me/79991234567" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<section class="hero">
+    <div>
+        <h1>Профессиональная <span>уборка</span> квартир в Москве</h1>
+        <p>Гарантируем идеальную чистоту за 3 часа. Более 7 лет опыта и 1500+ довольных клиентов.</p>
+        <a href="#form" class="btn-big">Заказать уборку со скидкой 15%</a>
     </div>
-  </header>
+</section>
 
-  <!-- УСЛУГИ -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2 class="section-title">Чем мы помогаем бизнесу</h2>
-      <div class="grid">
+<section class="advantages">
+    <h2>Почему выбирают нас</h2>
+    <div class="stats">
+        <div class="stat"><strong>1500+</strong><p>Довольных клиентов</p></div>
+        <div class="stat"><strong>7</strong><p>Лет на рынке</p></div>
+        <div class="stat"><strong>4.9★</strong><p>Средняя оценка</p></div>
+        <div class="stat"><strong>3 ч</strong><p>Среднее время уборки</p></div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>Наши услуги</h2>
+    <div class="cards">
         <div class="card">
-          <div class="card-icon">📈</div>
-          <h3>Стратегический консалтинг</h3>
-          <p>Разрабатываем стратегию роста и увеличиваем прибыль на 30–150 % за 12 месяцев</p>
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Генеральная уборка">
+            <div class="card-body">
+                <h3>Генеральная уборка</h3>
+                <div class="price">от 5 900 ₽</div>
+                <p>Полная глубокая очистка всех помещений</p>
+                <a href="#form" class="btn">Заказать</a>
+            </div>
         </div>
         <div class="card">
-          <div class="card-icon">🤖</div>
-          <h3>Автоматизация процессов</h3>
-          <p>Внедряем CRM, ERP и чат-боты под ключ. Экономия до 40 % фонда оплаты труда</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🚀</div>
-          <h3>Performance-маркетинг</h3>
-          <p>Реклама, которая приносит измеримый результат: от 3 до 15 лидов в день</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- О НАС + СЧЁТЧИКИ -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-grid">
-        <div>
-          <h2>Работаем на результат,<br>а не на отчёты</h2>
-          <p>Мы не просто консультанты — мы становимся частью вашей команды и отвечаем за KPI.</p>
-          <ul class="stats">
-            <li><strong>300+</strong> реализованных проектов</li>
-            <li><strong>94 %</strong> клиентов продолжают сотрудничество</li>
-            <li><strong>127 млн ₽</strong> дополнительной прибыли клиентам в 2024</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Команда">
-      </div>
-    </div>
-  </section>
-
-  <!-- КЕЙСЫ -->
-  <section id="cases" class="cases">
-    <div class="container">
-      <h2 class="section-title">Реальные результаты</h2>
-      <div class="cases-grid">
-        <div class="case-card">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="">
-          <div class="case-info">
-            <h3>Производство мебели «Лофт»</h3>
-            <p>×4,7 рост выручки за 14 месяцев<br>+218 % маржинальность</p>
-            <a href="#" class="case-link">Подробнее →</a>
-          </div>
-        </div>
-        <!-- Добавь ещё 2–3 кейса -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ФОРМА ЗАЯВКИ -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Готовы увеличить прибыль?</h2>
-      <p class="contact-text">Оставьте заявку — перезвоним в течение 15 минут</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Ваше имя" required>
-        <input type="tel" placeholder="Телефон" required>
-        <button type="submit" class="btn-primary">Отправить заявку</button>
-      </form>
-      <p class="contact-small">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Ваша компания. Все права защищены.</p>
-    </div>
-  </footer>
+            <img src="https://images.unsplash.com/photo-1581578735542-0f12a5be1f27?w=800" alt="Поддерживающая">
+            <div class="card-body">
+                <h3>Поддерживающая уборка</h3>
+                <div class="price">от 3 500 ₽</div>
+                <p>Еженедельная или 2 раза в месяц</p>
+                <a href="#form" class="btn">Заказать</a>
+            </div>
+        </
