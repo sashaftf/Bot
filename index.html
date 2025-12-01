@@ -19,24 +19,27 @@
     </nav>
 </header>
 
-<!-- WhatsApp кнопка -->
 <a href="https://wa.me/79991234567" class="whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<section class="hero">
+<!-- HERO с большим фоновым фото -->
+<section class="hero" style="background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.85)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85') center/cover no-repeat;">
     <div>
         <h1>Профессиональная <span>уборка</span> квартир в Москве</h1>
-        <p>Гарантируем идеальную чистоту за 3 часа. Более 7 лет опыта и 1500+ довольных клиентов.</p>
-        <a href="#form" class="btn-big">Заказать уборку со скидкой 15%</a>
+        <p>Гарантируем идеальную чистоту за 3 часа · Более 1500 довольных клиентов</p>
+        <a href="#form" class="btn-big">Заказать со скидкой 15%</a>
     </div>
 </section>
 
 <section class="advantages">
     <h2>Почему выбирают нас</h2>
     <div class="stats">
-        <div class="stat"><strong>1500+</strong><p>Довольных клиентов</p></div>
-        <div class="stat"><strong>7</strong><p>Лет на рынке</p></div>
+        <div class="stat">
+            <img src="https://images.unsplash.com/photo-1574175664923-0e0be04b7e8b?w=200&q=85" alt="Команда" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:15px;">
+            <strong>1500+</strong><p>Довольных клиентов</p>
+        </div>
+        <div class="stat"><strong>7</strong><p>Лет опыта</p></div>
         <div class="stat"><strong>4.9★</strong><p>Средняя оценка</p></div>
         <div class="stat"><strong>3 ч</strong><p>Среднее время уборки</p></div>
     </div>
@@ -46,20 +49,59 @@
     <h2>Наши услуги</h2>
     <div class="cards">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Генеральная уборка">
+            <img src="https://images.unsplash.com/photo-1584620659511-5535af2b11f5?w=800&q=85" alt="Генеральная уборка">
             <div class="card-body">
                 <h3>Генеральная уборка</h3>
                 <div class="price">от 5 900 ₽</div>
-                <p>Полная глубокая очистка всех помещений</p>
+                <p>Полная глубокая очистка всех помещений и труднодоступных мест</p>
                 <a href="#form" class="btn">Заказать</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1581578735542-0f12a5be1f27?w=800" alt="Поддерживающая">
+            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=800&q=85" alt="Поддерживающая">
             <div class="card-body">
                 <h3>Поддерживающая уборка</h3>
                 <div class="price">от 3 500 ₽</div>
-                <p>Еженедельная или 2 раза в месяц</p>
+                <p>Еженедельная или 2 раза в месяц — всегда чисто</p>
                 <a href="#form" class="btn">Заказать</a>
             </div>
-        </
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=85" alt="После ремонта">
+            <div class="card-body">
+                <h3>Уборка после ремонта</h3>
+                <div class="price">от 9 900 ₽</div>
+                <p>Удаление строительной пыли, пятен, запахов</p>
+                <a href="#form" class="btn">Заказать</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <h2>Отзывы клиентов</h2>
+    <div class="review">
+        <img src="https://images.unsplash.com/photo-1573496358961-3c8e379688c8?w=100&q=85" alt="Анна" style="width:70px;height:70px;border-radius:50%;margin-bottom:15px;">
+        <p>«Заказывала после ремонта — всё сияет! Спасибо огромное!»</p>
+        <strong>— Анна К., 28 ноября 2025</strong>
+    </div>
+</section>
+
+<section id="form">
+    <h2>Оставьте заявку — перезвоним за 2 минуты</h2>
+    <form id="contactForm" class="form">
+        <input type="text" id="name" placeholder="Ваше имя" required>
+        <input type="tel" id="phone" placeholder="+7 (999) 999-99-99" required>
+        <select id="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Генеральная уборка</option>
+            <option>Поддерживающая уборка</option>
+            <option>Уборка после ремонта</option>
+        </select>
+        <button type="submit">Получить скидку 15%</button>
+        <div id="status"></div>
+    </form>
+</section>
+
+<footer>
+    © 2025 CleanHome Москва · +7 (999) 123-45-67 · WhatsApp в правом
